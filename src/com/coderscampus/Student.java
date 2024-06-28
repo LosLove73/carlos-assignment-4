@@ -1,7 +1,8 @@
 package com.coderscampus;
 
 //Class to hold student data
-public class Student {
+public class Student implements Comparable<Student> {
+
 	int studentId;
 	String studentName;
 	String courseName;
@@ -16,9 +17,21 @@ public Student (int studentId, String studentName, String courseName, int studen
 		
 	}
 
-@Override
-public String toString() {
-	return studentId + "," + studentName + "," + courseName + "," + studentGrade;
+//Getter for studentGrade
+public int getStudentGrade() {
+	return studentGrade;
 }
 
+@Override
+public int compareTo(Student o) {
+	// TODO Auto-generated method stub
+	return 0;
 }
+
+//compareTo method for sorting by studentGrade descending
+
+
+	
+}
+
+
